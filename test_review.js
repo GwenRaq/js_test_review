@@ -2,18 +2,22 @@
 //November 23 2016 
 //title: javascript test review
 
+//Variables
 var knight = "Gwain";
 var maiden = "Guinevere";
 var monster = "Dragon";
 
-var weaponChest = ["Mace", "sorcerersStone", "Excalibur"];
+//Array
+var weaponChest = ["Mace", "Sorcerer's Stone", "Excalibur"];
+
+//Object
 var hero = {
 	wizard : "Merlin",
-	weapon : "Excalibur",
+	weapon : weaponChest[2];
 	power : 2
 }
 
-
+//Sword in the Stone 
 function swordInTheStone(worthy){
 	if(worthy == "Arthur"){
 		console.log("We have found our King"+" "+ worthy + ".");
@@ -21,9 +25,9 @@ function swordInTheStone(worthy){
 		console.log("We must keep searching," + "for"+" "+ worthy +" "+"is unworthy" + ".");
 	}
 }
-swordInTheStone(knight)
+swordInTheStone(knight);
 
-
+//KingQueen
 function trueLove(king, queen){
 	if(queen == "Guinevere" && king == "Arthur"){
 		console.log("On this day, our"+ " "+ king +" "+"and" + " "+ queen +" "+ "shall rule happily ever after");
@@ -31,8 +35,9 @@ function trueLove(king, queen){
 		console.log("We must keep searching, for true love must reign over Camelot.");
 	}
 }
-trueLove(knight, maiden)
+trueLove(knight, maiden);
 
+//Battle
 function epicBattle(wizard, enemy, power){
 	if(power <= 15){
 		console.log("Our"+" "+ wizard +" "+ "has fallen"+ ".");
@@ -44,4 +49,6 @@ function epicBattle(wizard, enemy, power){
 		console.log("Our" +" "+ wizard+ " "+"has slain the"+" "+ enemy+"!");
 	}
 }
-epicBattle(hero.wizard, monster, hero.power)
+epicBattle(hero.wizard, monster, hero.power);
+
+//ok
